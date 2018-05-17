@@ -1,3 +1,9 @@
+BUILD = go build -o world -tags
+
 .PHONY: first
 first:
-	go build -tags "first" -o world
+	${BUILD} first
+
+.PHONY: second
+second:
+	${BUILD} second
