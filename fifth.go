@@ -7,17 +7,17 @@ import (
 	"os"
 )
 
-// Base :
-type Base struct{}
+// BaseGreeter :
+type BaseGreeter struct{}
 
 // HelloTo :
-func (f *Base) HelloTo(name string) {
+func (f *BaseGreeter) HelloTo(name string) {
 	fmt.Printf("hello %v\n", name)
 }
 
 // World :
 type World struct {
-	Base
+	BaseGreeter
 }
 
 // Hello :
@@ -27,7 +27,7 @@ func (w *World) Hello() {
 
 // Thing :
 type Thing struct {
-	Base
+	BaseGreeter
 	Name string
 }
 
