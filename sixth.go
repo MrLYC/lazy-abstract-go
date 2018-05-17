@@ -37,13 +37,13 @@ func (t *Thing) Hello() {
 	t.HelloTo(t.Name)
 }
 
-// Time :
-type Time struct {
+// Now :
+type Now struct {
 	Base
 }
 
-// Time :
-func (t *Time) Hello() {
+// Now :
+func (t *Now) Hello() {
 	t.HelloTo(time.Now().String())
 }
 
@@ -58,8 +58,8 @@ func New() Greeter {
 	switch name {
 	case "":
 		return &World{}
-	case "time":
-		return &Time{}
+	case "now":
+		return &Now{}
 	default:
 		return &Thing{
 			Name: name,
