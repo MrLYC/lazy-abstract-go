@@ -1,6 +1,6 @@
 package main
 
 func main() {
-	var world World = NewWorld()
-	world.Hello()
+	var greeter Greeter = New()
+	greeter.Hello()
 }

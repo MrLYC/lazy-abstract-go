@@ -1,4 +1,4 @@
-BUILD = go build -o world -tags
+BUILD = go build -o greeting -tags
 
 .PHONY: first
 first:
@@ -7,3 +7,7 @@ first:
 .PHONY: second
 second:
 	${BUILD} second
+
+.PHONY: third
+third:
+	${BUILD} third

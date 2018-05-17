@@ -1,4 +1,4 @@
-// +build first
+// +build second
 
 package main
 
@@ -14,7 +14,10 @@ func (w *World) Hello() {
 	fmt.Println("hello world")
 }
 
-// NewWorld :
-func NewWorld() World {
-	return World{}
+// Greeter :
+type Greeter = *World
+
+// New :
+func New() Greeter {
+	return &World{}
 }
