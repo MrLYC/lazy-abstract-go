@@ -11,3 +11,7 @@ second:
 .PHONY: third
 third:
 	${BUILD} third
+
+.PHONY: fourth
+fourth:
+	${BUILD} fourth
